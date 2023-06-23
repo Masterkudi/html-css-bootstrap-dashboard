@@ -4,3 +4,34 @@
     box-sizing: border-box;
 }
 
+.navbar.bg-body-tertiary {
+    background-color: #F8F9FA;
+}
+
+.container-fluid {
+    background-color: #ffffff;
+}
+.form-control.me-2 {
+    background-color: #E5E5E5;
+}
+
+.d-flex-custom {
+    background-color: #E5E5E5;
+    width: 60%;
+    border-radius: 5px;
+    align-items: center;
+}
+.d-flex-custom i {
+    padding: .5rem;
+    font-size: 1.2rem;
+}
+
+
+.icon-menu i {
+    padding: .5rem;
+}
+
+.icon-menu button {
+    background-color: #ffffff;
+    border-style: none;
+}
