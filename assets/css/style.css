@@ -6,6 +6,10 @@
 
 .navbar.bg-body-tertiary {
     background-color: #F8F9FA;
+    position: fixed;
+    display: flex;
+    overflow: auto;
+    width: 100vw;
 }
 
 .container-fluid {
@@ -26,7 +30,6 @@
     font-size: 1.2rem;
 }
 
-
 .icon-menu i {
     padding: .5rem;
 }
@@ -34,4 +37,13 @@
 .icon-menu button {
     background-color: #ffffff;
     border-style: none;
+}
+
+.container-fluid {
+    overflow: auto;
+}
+.bg-dark {
+    background-image: url(../img/sidebar-bg.png);
+    display: flex;
+    overflow: auto;
 }
