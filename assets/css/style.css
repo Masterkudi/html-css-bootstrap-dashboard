@@ -58,3 +58,7 @@ body {
     background-image: url(../img/sidebar-bg.png);
     max-width: 200px;
 }
+
+.sidebar {
+    padding-top: 5rem;
+}
