@@ -4,11 +4,13 @@
     box-sizing: border-box;
 }
 
+body {
+    position: fixed;
+    overflow: auto;
+} 
+
 .navbar.bg-body-tertiary {
     background-color: #F8F9FA;
-    position: fixed;
-    display: flex;
-    overflow: auto;
     width: 100vw;
 }
 
@@ -39,11 +41,20 @@
     border-style: none;
 }
 
-.container-fluid {
-    overflow: auto;
+.container-fluid-custom li, span {
+    padding: 1rem;
+    list-style: none;
+    margin: 0;
+}
+.container-fluid-custom i {
+    margin: auto;
+    list-style: none;
+}
+.container-fluid-custom li:hover {
+    background-color: #ffffff;
+    color:#000000;
 }
 .bg-dark {
     background-image: url(../img/sidebar-bg.png);
-    display: flex;
-    overflow: auto;
+    max-width: 200px;
 }
