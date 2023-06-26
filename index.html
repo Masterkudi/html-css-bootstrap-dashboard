@@ -16,8 +16,8 @@
 <body>
     <header>
         <nav class="navbar bg-body-tertiary">
-            <div class="container-fluid">
-                <img src="assets/img/logo.svg" alt="">
+            <div class="container-fluid d-flex">
+                <img src="assets/img/logo.svg" alt="" class="me-2" >
                 <div class="d-flex d-flex-custom">
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <input class="form-control me-2" type="search" placeholder="Prova a cercare: Lezioni di Laravel"
@@ -26,10 +26,10 @@
                 <div class="icon-menu">
                     <div class="row">
                         <div class="col">
-                            <i class="fa-solid fa-list"></i>
-                            <i class="fa-solid fa-circle-question"></i>
-                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                            <button><i class="fa-solid fa-bell" style="color: #ff8e18;"></i></button>
+                            <i class="fa-solid fa-list d-none d-sm-inline"></i>
+                            <i class="fa-solid fa-circle-question d-none d-sm-inline"></i>
+                            <i class="fa-solid fa-ellipsis-vertical d-none d-sm-inline"></i>
+                            <button><i class="fa-solid fa-bell fa-beat" style="color: #ff8e18;" ></i></button>
                         </div>
                     </div>
                 </div>
@@ -40,7 +40,7 @@
         <div class="container-fluid container-fluid-custom">
             <div class="row flex-nowrap">
                 <div class="col-auto col-md-2 col-xl-2 px-sm-2 bg-dark">
-                    <div class="sidebar d-flex flex-column align-items-center align-items-sm-start px-3 text-white min-vh-100">
+                    <div class="sidebar d-flex flex-column align-items-center align-items-sm-start px-3 text-white">
                         <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start text-white"
                             id="menu">
                             <li class="nav-item">
@@ -58,12 +58,35 @@
                         </div>
                     </div>
                 </div>
-                <div class="col py-3">
-                    <h1></h1>
+                <div class="col p-0">
+                    <div class="blu-line nav-pills d-flex justify-content-between align-items-center align-items-sm-start pt-4 pe-4 pb-4 ps-3 text-white bg-primary">
+                        <section class="right-sec d-flex fd-col">
+                            <h2>Boolean</h2>
+                            
+                        </section>
+                        <section class="center-sec d-flex fd-col">
+                            <p>Studenti online negli ultimi 30 min</p>
+                            <h2>125</h2>
+                        </section>
+                        <section class="left-sec d-flex fd-row">
+                            <p>Nuovo Studente</p>
+                            <button><i class="fa-solid fa-plus style-none px-2 bg-primary"></i></button>
+                        </section>
+                    </div>
+                    <div class="row">
+                        <div class="col-8">
+                            <table>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita atque libero accusamus quidem minus minima? Illo reiciendis, odio aperiam commodi quia facilis vel mollitia, itaque quod praesentium amet perspiciatis nihil.</p>
+                            </table>
+                        </div>
+                        <div class="col-4">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis sunt labore, odit ipsa autem harum alias ab! Incidunt ratione nostrum, corrupti voluptatem magnam quo odit quidem saepe aspernatur minima. Vel?</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
+       
     </main>
     <footer>
 
