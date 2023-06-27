@@ -60,3 +60,11 @@
 .sidebar {
     height: calc(100vh - 54px);
 }
+
+.badge.rounded-pill.text-align-center.flex-wrap {
+    background-color: #165BBA;
+}
+
+.table tr:hover {
+    background-color: lightgrey;
+}
