@@ -28,6 +28,10 @@
     font-size: 1.2rem;
 }
 
+.container-fluid .logo-2 {
+    width: 3rem;
+}
+
 .icon-menu i {
     padding: .5rem;
 }
