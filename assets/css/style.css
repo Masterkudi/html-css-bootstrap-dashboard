@@ -40,6 +40,9 @@
     background-color: #ffffff;
     border-style: none;
 }
+.dropdown {
+    width: 32px;
+}
 
 .container-fluid-custom li, span {
     padding: 1rem;

@@ -21,7 +21,7 @@
                 <img src="assets/img/mobile-logo.png" alt="" class="logo-2 d-inline d-sm-none">
                 <div class="d-flex d-flex-custom">
                     <i class="fa-solid fa-magnifying-glass"></i>
-                    <input class="form-control me-2" type="search" placeholder="Prova a cercare: Lezioni di Laravel"
+                    <input class="form-control me-2 p-0" type="search" placeholder="Prova a cercare: Lezioni di Laravel"
                         aria-label="Search">
                 </div>
                 <div class="icon-menu">
@@ -30,8 +30,16 @@
                             <i class="fa-solid fa-list d-none d-sm-inline"></i>
                             <i class="fa-solid fa-circle-question d-none d-sm-inline"></i>
                             <i class="fa-solid fa-ellipsis-vertical d-none d-sm-inline"></i>
-                            <button><i class="fa-solid fa-bell fa-beat" style="color: #ff8e18;"></i> 
-                            </button>
+                            <div class="dropdown">
+                                <button class="btn p-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-bell" style="color: #ff8e18;"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Profilo</a></li>
+                                    <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -84,15 +92,36 @@
                         </div>
                         <div class="col-md-3 col-sm-12 left-sec d-flex justify-content-center align-items-center">
                             <p class="d-flex justify-content-center align-items-center mb-0">Nuovo Studente</p>
-                            <button class="btn btn-outline-light ms-3"><i class="fa-solid fa-plus"></i></button>
-                            
+                            <button class="btn btn-outline-light ms-3" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasExample"><i class="fa-solid fa-plus"></i></button>
+ 
+                            <!-- OffCanvas button -->
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                                aria-labelledby="offcanvasExampleLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <div>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil accusantium commodi quis fuga id, quia suscipit in natus ea sapiente corrupti, sed necessitatibus voluptatibus voluptas voluptatum accusamus vero? Facere, eaque.
+                                    </div>
+                                    <div class="dropdown mt-3">
+                                       
+                                    </div>
+                                </div>
+                            </div>
+
+
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-7 col-sm-12">
                             <div class="card mt-3 me-3 mb-3 ms-3">
                                 <div class="card-header">
-                                    Prossime classi
+                                    <h5>Prossime classi</h5>
                                 </div>
                                 <div class="card-body">
                                     <table class="table">
@@ -223,7 +252,7 @@
                             </div>
                             <div class="card mt-3 me-3 mb-3 ms-3">
                                 <div class="card-header">
-                                    <h2>F.A.Q.</h2>
+                                    <h5>F.A.Q.</h5>
                                 </div>
                                 <div class="card-body">
                                     <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -284,7 +313,7 @@
                         <div class="col-md-5 col-sm-12">
                             <div class="card mt-3 ">
                                 <div class="card-header">
-                                    Todo
+                                    <h5>Todo</h5>
                                 </div>
                                 <div class="card mt-3 me-3 mb-3 ms-3">
                                     <div>
